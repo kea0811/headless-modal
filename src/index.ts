@@ -1,2 +1,30 @@
-// Public API — implementation lands in the next commit.
-export const version = '0.1.0';
+export { useModal } from './useModal';
+export {
+  Modal,
+  ModalTrigger,
+  ModalPortal,
+  ModalOverlay,
+  ModalContent,
+  ModalTitle,
+  ModalDescription,
+  ModalClose,
+} from './Modal';
+export type {
+  ModalRole,
+  UseModalOptions,
+  UseModalResult,
+  ModalTriggerProps,
+  ModalOverlayProps,
+  ModalContentProps,
+  ModalTitleProps,
+  ModalDescriptionProps,
+  ModalCloseProps,
+  ModalProps,
+  ModalTriggerComponentProps,
+  ModalPortalProps,
+  ModalOverlayComponentProps,
+  ModalContentComponentProps,
+  ModalTitleComponentProps,
+  ModalDescriptionComponentProps,
+  ModalCloseComponentProps,
+} from './types';
