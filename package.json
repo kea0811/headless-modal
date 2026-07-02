@@ -1,0 +1,86 @@
+{
+  "name": "headless-modal",
+  "version": "0.1.0",
+  "description": "Accessible, headless modal / dialog primitive for React — focus trap, scroll lock, portal rendering, Escape & overlay close, and full ARIA, with zero styling. You own the markup; it owns the behavior. Works with React 18 and 19.",
+  "keywords": [
+    "react",
+    "modal",
+    "dialog",
+    "headless",
+    "accessible",
+    "a11y",
+    "aria",
+    "wai-aria",
+    "focus-trap",
+    "scroll-lock",
+    "portal",
+    "overlay",
+    "react-hook",
+    "ui"
+  ],
+  "author": "kea0811",
+  "license": "MIT",
+  "homepage": "https://github.com/kea0811/headless-modal#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kea0811/headless-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kea0811/headless-modal/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "demo:dev": "pnpm -F demo dev",
+    "demo:build": "pnpm -F demo build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "@vitest/coverage-v8": "^2.1.2",
+    "jsdom": "^25.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.4",
+    "vitest": "^2.1.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "packageManager": "pnpm@10.28.1"
+}
